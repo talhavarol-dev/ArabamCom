@@ -179,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				7189437529EB69C2003AC589 /* AdvertViewController+ViewModels */,
-				7189437829EB6A01003AC589 /* AdvertDetailViewController+ViewModels */,
 			);
 			path = "ViewControllers+ViewModels";
 			sourceTree = "<group>";
@@ -216,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				719024B129F02297002A787A /* AdvertViewController+ViewModels */,
+				7189437829EB6A01003AC589 /* AdvertDetailViewController+ViewModels */,
 			);
 			name = "AdvertViewController+ViewModels";
 			path = "../Scenes/AdvertViewController+ViewModels";
