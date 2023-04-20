@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L7f-7M-tqb">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -24,16 +23,8 @@
                                     <outlet property="delegate" destination="MaU-3M-QEV" id="wIb-1y-FNV"/>
                                 </connections>
                             </searchBar>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4B-f9-fkn">
-                                <rect key="frame" x="0.0" y="735" width="393" height="83"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Anasayfa" image="house.fill" catalog="system" selectedImage="house" id="k3a-x9-WrX"/>
-                                    <tabBarItem title="Favoriler" image="star.fill" catalog="system" id="RN8-d7-X4z"/>
-                                </items>
-                            </tabBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bgv-yO-KTq">
-                                <rect key="frame" x="0.0" y="159" width="393" height="576"/>
+                                <rect key="frame" x="0.0" y="159" width="393" height="659"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="MaU-3M-QEV" id="RpK-x7-lb9"/>
@@ -44,34 +35,60 @@
                         <viewLayoutGuide key="safeArea" id="ghX-wf-6Lo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="P4B-f9-fkn" firstAttribute="trailing" secondItem="ghX-wf-6Lo" secondAttribute="trailing" id="3t2-RN-pY1"/>
-                            <constraint firstItem="P4B-f9-fkn" firstAttribute="bottom" secondItem="ghX-wf-6Lo" secondAttribute="bottom" id="LxI-Mc-Wb7"/>
+                            <constraint firstItem="bgv-yO-KTq" firstAttribute="bottom" secondItem="ghX-wf-6Lo" secondAttribute="bottom" id="1Ev-cM-zjH"/>
                             <constraint firstItem="8RG-p5-jb9" firstAttribute="top" secondItem="ghX-wf-6Lo" secondAttribute="top" id="QpV-Hp-KE0"/>
                             <constraint firstItem="8RG-p5-jb9" firstAttribute="trailing" secondItem="ghX-wf-6Lo" secondAttribute="trailing" id="SFe-Gg-VWn"/>
-                            <constraint firstItem="P4B-f9-fkn" firstAttribute="top" secondItem="bgv-yO-KTq" secondAttribute="bottom" id="Xit-Ob-6LT"/>
-                            <constraint firstItem="bgv-yO-KTq" firstAttribute="leading" secondItem="ghX-wf-6Lo" secondAttribute="leading" id="aiT-sR-7xT"/>
-                            <constraint firstItem="bgv-yO-KTq" firstAttribute="top" secondItem="8RG-p5-jb9" secondAttribute="bottom" id="jZk-Kc-5ji"/>
-                            <constraint firstItem="P4B-f9-fkn" firstAttribute="leading" secondItem="ghX-wf-6Lo" secondAttribute="leading" id="tf3-Az-yW2"/>
-                            <constraint firstItem="ghX-wf-6Lo" firstAttribute="trailing" secondItem="bgv-yO-KTq" secondAttribute="trailing" id="uOF-y2-Dfq"/>
+                            <constraint firstItem="bgv-yO-KTq" firstAttribute="leading" secondItem="ghX-wf-6Lo" secondAttribute="leading" id="TzP-kR-jOh"/>
+                            <constraint firstItem="bgv-yO-KTq" firstAttribute="trailing" secondItem="ghX-wf-6Lo" secondAttribute="trailing" id="f5c-zW-2TM"/>
+                            <constraint firstItem="bgv-yO-KTq" firstAttribute="top" secondItem="8RG-p5-jb9" secondAttribute="bottom" id="l8p-k3-XSb"/>
                             <constraint firstItem="8RG-p5-jb9" firstAttribute="leading" secondItem="ghX-wf-6Lo" secondAttribute="leading" id="zU2-KC-mJn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="İlanlar" id="fws-hP-BaT"/>
                     <connections>
-                        <outlet property="favoriItem" destination="RN8-d7-X4z" id="7qU-Mg-BPt"/>
-                        <outlet property="homeItem" destination="k3a-x9-WrX" id="Fge-RB-byO"/>
-                        <outlet property="searchBar" destination="8RG-p5-jb9" id="P6B-be-ogo"/>
+                        <outlet property="searchBar" destination="8RG-p5-jb9" id="3q5-gz-ybx"/>
                         <outlet property="tableView" destination="bgv-yO-KTq" id="jLX-Kf-H2W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DUP-4R-9yI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2901.5267175572517" y="-301.40845070422534"/>
+            <point key="canvasLocation" x="3034" y="439"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Advert Detail View Controller-->
+        <scene sceneID="ATk-k8-9cd">
+            <objects>
+                <viewController id="OKk-Rf-Khz" customClass="AdvertDetailViewController" customModule="ArabamCom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C9O-KK-63G">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="07b-7r-4i8">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ovU-HP-Fc0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="07b-7r-4i8" firstAttribute="top" secondItem="ovU-HP-Fc0" secondAttribute="top" id="DBc-EY-f1D"/>
+                            <constraint firstItem="ovU-HP-Fc0" firstAttribute="trailing" secondItem="07b-7r-4i8" secondAttribute="trailing" id="kkg-Jt-UKU"/>
+                            <constraint firstItem="ovU-HP-Fc0" firstAttribute="bottom" secondItem="07b-7r-4i8" secondAttribute="bottom" id="l1F-N0-gBE"/>
+                            <constraint firstItem="07b-7r-4i8" firstAttribute="leading" secondItem="ovU-HP-Fc0" secondAttribute="leading" id="tnI-ob-V7Y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="07b-7r-4i8" id="wmS-vZ-tJK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="96u-no-PbD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5457.2519083969464" y="-301.40845070422534"/>
+        </scene>
+        <!--Anasayfa-->
         <scene sceneID="hZS-xh-hfw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L7f-7M-tqb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Anasayfa" image="house" catalog="system" selectedImage="house" id="B5b-V3-OK4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zfZ-zq-BVu">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -79,18 +96,16 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="MaU-3M-QEV" kind="relationship" relationship="rootViewController" id="4j6-Dv-YIi"/>
+                        <segue destination="MaU-3M-QEV" kind="relationship" relationship="rootViewController" id="esQ-H2-DEb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EEF-SX-e9Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1974.8091603053435" y="-301.40845070422534"/>
+            <point key="canvasLocation" x="2196" y="439"/>
         </scene>
     </scenes>
     <resources>
         <image name="house" catalog="system" width="128" height="104"/>
-        <image name="house.fill" catalog="system" width="128" height="104"/>
-        <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

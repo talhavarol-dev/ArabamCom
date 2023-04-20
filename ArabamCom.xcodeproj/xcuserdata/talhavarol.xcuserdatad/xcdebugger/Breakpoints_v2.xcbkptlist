@@ -36,5 +36,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A7086F82-9285-4A9C-8C81-305755DE02F7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ArabamCom/ViewControllers+ViewModels/AdvertDetailViewController+ViewModel/Cell/HeaderCollectionViewCell/HeaderCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "setImage(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A7086F82-9285-4A9C-8C81-305755DE02F7 - ece771daca432667"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ArabamCom.HeaderCollectionViewCell.setImage(with: Swift.String) -&gt; ()"
+                  moduleName = "ArabamCom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/talhavarol/Desktop/ArabamCom/ArabamCom/ArabamCom/ViewControllers+ViewModels/AdvertDetailViewController+ViewModel/Cell/HeaderCollectionViewCell/HeaderCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "636">
+               </Location>
+               <Location
+                  uuid = "A7086F82-9285-4A9C-8C81-305755DE02F7 - ece771daca432667"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ArabamCom.HeaderCollectionViewCell.setImage(with: Swift.String) -&gt; ()"
+                  moduleName = "ArabamCom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/talhavarol/Desktop/ArabamCom/ArabamCom/ArabamCom/ViewControllers+ViewModels/AdvertDetailViewController+ViewModel/Cell/HeaderCollectionViewCell/HeaderCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "1028">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

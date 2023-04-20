@@ -20,11 +20,11 @@ final class AdvertViewModel{
     init(service: AdvertServiceable) {
         self.service = service
     }
-    internal func fetchData() {
+    internal func fetchData(take: Int) {
           Task(priority: .background) { [weak self] in
               guard let self = self else { return }
               do {
-                  let result = await self.service.getAdvert(sort: 1, sortDirection: 0, take: 30)
+                  let result = await self.service.getAdvert(sort: 1, sortDirection: 0, take: take)
                   DispatchQueue.main.async { [weak self] in
                       guard let self = self else { return }
                       switch result {
