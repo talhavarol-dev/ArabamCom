@@ -14,10 +14,9 @@ I model the data I got from a haber site and transferred it to the application w
 + Unit Test ✅ 
 
 ## Demo
+![Simulator Screenshot - iPhone 14](https://user-images.githubusercontent.com/80515499/233509655-7221a02a-cb80-45d9-945f-d7d3612a69b8.png)
 
-![Simulator Screenshot - iPhone 14 Pro - 2023-04-21 at 02 37 24](https://user-images.githubusercontent.com/80515499/233509428-7ffda38c-6dbf-4e4d-b1cc-f113542ce385.png)
 
 https://user-images.githubusercontent.com/80515499/233509444-1179a770-a258-41ab-b0e3-54ddaa1fbe40.mp4
-
 https://user-images.githubusercontent.com/80515499/233509450-1ae51643-e98e-4842-85aa-7ba423361732.mp4
 
