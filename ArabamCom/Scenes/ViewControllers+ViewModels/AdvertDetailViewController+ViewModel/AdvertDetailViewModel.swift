@@ -14,7 +14,6 @@ import Foundation
      func getData(id: String){
          fetchDetailData(id: id, successHandler: fetchAdvertDetail)
      }
-     
      private func fetchDetailData(id: String, successHandler: ((AdvertDetail) -> Void)?) {
         Task(priority: .background) { [weak self] in
             guard let self = self else { return }
@@ -24,7 +23,6 @@ import Foundation
                     guard let self = self else { return }
                     switch result {
                     case .success(let response):
-                        //   print(advertDetail.photos)
                         successHandler?(response)
                     case .failure(let error):
                         print(error)

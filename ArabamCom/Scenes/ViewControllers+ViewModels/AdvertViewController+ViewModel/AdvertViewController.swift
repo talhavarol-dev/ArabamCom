@@ -88,7 +88,6 @@ extension AdvertViewController: AdvertViewModelDelegate {
             }
             self.tableView.reloadData()
         }
-
     }
     
     internal func didFailWithError(error: Error) {
@@ -98,6 +97,7 @@ extension AdvertViewController: AdvertViewModelDelegate {
     fileprivate func fetchData(){
         viewModel.fetchData(take: currentTake)
     }
+    
     fileprivate func loadMoreData() {
         let nextCurrent = currentTake
         viewModel.fetchData(take: nextCurrent)

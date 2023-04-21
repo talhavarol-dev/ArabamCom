@@ -38,7 +38,7 @@ extension HTTPClient {
         do {
             let (data, response) = try await URLSession.shared.data(for: request, delegate: nil)
             guard let response = response as? HTTPURLResponse else {
-//                NetworkLog.log(request: request)
+//        NetworkLog.log(request: request)
                 return .failure(.noResponse)
             }
 //        NetworkLog.log(data: data, response: response, error: RequestError.decode)
