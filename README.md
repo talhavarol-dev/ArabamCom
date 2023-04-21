@@ -101,7 +101,9 @@ Yaptığım case içerisinde her iki yöntemi de kullanarak nasıl kullanıldı�
 Eğer yaptığınız çalışmada "hangi yöntemi kullansam?" sorusuyla karşı karşıyaysanız, caseimi incelemenizi tavsiye ederim 🙂
 
 ## Unit Test 
+
 ```` swift
+
 import XCTest
 @testable import ArabamCom
 
