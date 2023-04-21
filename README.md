@@ -162,6 +162,7 @@ Asıl test noktası:
         XCTAssertEqual(mockData[2].category.name, "Category 3")
 ````
 aslında sadece burası. Yazılan diğer kodlar, taklit etme adına oluşturmuş olduğumuz yalancı bir AdvertViewModel'den ibarettir.
+
 Umarım Unit test konusunda sizi biraz olsun tatmin etmiştir.
 
 (Bu repo güncellenecek ve favori ilanlar sekmesi eklenecektir.)
