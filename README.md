@@ -99,6 +99,7 @@ Detay ekranında ise farklı bir yöntem olarak closure yapısını kullandım.
 ````
 Yaptığım case içerisinde her iki yöntemi de kullanarak nasıl kullanıldığını göstermek istedim.
 Eğer yaptığınız çalışmada "hangi yöntemi kullansam?" sorusuyla karşı karşıyaysanız, caseimi incelemenizi tavsiye ederim 🙂
+Case içerisinde tableView section yapısıyla cell'leri birleştirmek için baya bir uğraştım ancak indexPath.row atamaları ile yoluma devam ettim :)
 
 ## Unit Test 
 
