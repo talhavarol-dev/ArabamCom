@@ -20,7 +20,7 @@ https://user-images.githubusercontent.com/80515499/233509444-1179a770-a258-41ab-
 
 https://user-images.githubusercontent.com/80515499/233509450-1ae51643-e98e-4842-85aa-7ba423361732.mp4
 
-Async / Await
+## Async / Await
 
 ```` swift
 protocol AdvertServiceable {
@@ -145,5 +145,24 @@ class MockLeagueService: AdvertServiceable {
     }
 }
 ````
+Test senaryosu oluşturmak, mockData vs. gibi terimler kafa karıştırıcı olabiliyor. Testle ilgili asıl kavramamız gereken nokta;
+- Çalışan herhangi bir yapıyı ve yapının sonuçlarını; taklit etmek, manipüle etmektir.
+Yukarıdaki Unit test senaryosunda MainViewModelde bulunan fetchData() fonksiyonunu ele aldım. fetchData fonksiyonunu çalıştırabilmek ve sonuçlarını görebilmek adına;
+-Fake network işlemleri
+-Fake viewModel tanımlaması
+-Fake response datası oluşturdum.
+
+ve bu fake işemlere Unit test yazarken 'Mock'diyoruz.
+Asıl test noktası:
+
+```` swift
+        XCTAssertEqual(mockData.count, 3)
+        XCTAssertEqual(mockData[0].title, "Mock Advert 1")
+        XCTAssertEqual(mockData[1].modelName, "Model 2")
+        XCTAssertEqual(mockData[2].category.name, "Category 3")
+````
+aslında sadece burası. Yazılan diğer kodlar, taklit etme adına oluşturmuş olduğumuz yalancı bir AdvertViewModel'den ibarettir.
+Umarım Unit test konusunda sizi biraz olsun tatmin etmiştir.
+
 (Bu repo güncellenecek ve favori ilanlar sekmesi eklenecektir.)
                   
