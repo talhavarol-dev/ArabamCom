@@ -29,10 +29,10 @@ final class AdvertViewModel{
                       guard let self = self else { return }
                       switch result {
                       case .success(let response):
-                          self.advert = response // advert dizisini güncelle
-                          self.delegate?.didFetchData(advert: advert) // Delegate ile bildir
+                          self.advert = response
+                          self.delegate?.didFetchData(advert: advert)
                       case .failure(let error):
-                          self.delegate?.didFailWithError(error: error) // Delegate ile hata bildir
+                          self.delegate?.didFailWithError(error: error) 
                       }
                   }
               }

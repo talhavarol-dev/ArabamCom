@@ -17,7 +17,6 @@ final class AdvertCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     var location: Location? {
