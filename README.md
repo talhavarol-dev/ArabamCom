@@ -97,9 +97,6 @@ Detay ekranında ise farklı bir yöntem olarak closure yapısını kullandım.
         }
     }
 ````
-Yaptığım case içerisinde her iki yöntemi de kullanarak nasıl kullanıldığını göstermek istedim.
-Eğer yaptığınız çalışmada "hangi yöntemi kullansam?" sorusuyla karşı karşıyaysanız, caseimi incelemenizi tavsiye ederim 🙂
-Case içerisinde tableView section yapısıyla cell'leri birleştirmek için baya bir uğraştım ancak indexPath.row atamaları ile yoluma devam ettim :)
 
 ## Unit Test 
 
@@ -146,15 +143,8 @@ class MockLeagueService: AdvertServiceable {
     }
 }
 ````
-Test senaryosu oluşturmak, mockData vs. gibi terimler kafa karıştırıcı olabiliyor. Testle ilgili asıl kavramamız gereken nokta;
-- Çalışan herhangi bir yapıyı ve yapının sonuçlarını; taklit etmek, manipüle etmektir.
-Yukarıdaki Unit test senaryosunda MainViewModelde bulunan fetchData() fonksiyonunu ele aldım. fetchData fonksiyonunu çalıştırabilmek ve sonuçlarını görebilmek adına;
--Fake network işlemleri
--Fake viewModel tanımlaması
--Fake response datası oluşturdum.
 
-ve bu fake işemlere Unit test yazarken 'Mock'diyoruz.
-Asıl test noktası:
+aslında sadece burası. Yazılan diğer kodlar, taklit etme adına oluşturmuş olduğumuz yalancı bir AdvertViewModel'den ibarettir.
 
 ```` swift
         XCTAssertEqual(mockData.count, 3)
@@ -162,9 +152,7 @@ Asıl test noktası:
         XCTAssertEqual(mockData[1].modelName, "Model 2")
         XCTAssertEqual(mockData[2].category.name, "Category 3")
 ````
-aslında sadece burası. Yazılan diğer kodlar, taklit etme adına oluşturmuş olduğumuz yalancı bir AdvertViewModel'den ibarettir.
 
-Umarım Unit test konusunda sizi biraz olsun tatmin etmiştir.
 
 (Bu repo güncellenecek ve favori ilanlar sekmesi eklenecektir.)
                   
