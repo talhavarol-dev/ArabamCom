@@ -15,10 +15,6 @@ I model the data I got from a advert site and transferred it to the application 
 
 ## Demo
 ![Simulator Screenshot - iPhone 14](https://user-images.githubusercontent.com/80515499/233509655-7221a02a-cb80-45d9-945f-d7d3612a69b8.png)
-
-https://user-images.githubusercontent.com/80515499/233509444-1179a770-a258-41ab-b0e3-54ddaa1fbe40.mp4 
-
-https://user-images.githubusercontent.com/80515499/233509450-1ae51643-e98e-4842-85aa-7ba423361732.mp4
 ![Simulator Screenshot - iPhone 14 Pro - 2023-05-17 at 04 07 44 (1)](https://github.com/talhavarol-dev/ArabamCom/assets/80515499/c54d4bf0-5ce4-4c14-831d-73cb613a601f)
 ![Simulator Screenshot - iPhone 14 Pro - 2023-05-17 at 04 07 56](https://github.com/talhavarol-dev/ArabamCom/assets/80515499/6a300c76-4d21-48f4-aa24-8523e1a74f83)
 ![Simulator Screenshot - iPhone 14 Pro - 2023-05-17 at 04 08 04](https://github.com/talhavarol-dev/ArabamCom/assets/80515499/eaaef3ac-fd7b-4b77-8540-8ed7cf116307)
